@@ -35,7 +35,7 @@ const bacaData = (fnCallBack) => {
       resultArray.push(dataResult.message.split(" ")[1])
     }
   )
-  
+
  fs.readFile(
     file2,
     {
@@ -61,6 +61,7 @@ const bacaData = (fnCallBack) => {
       }
       const dataResult = JSON.parse(data)
       resultArray.push(dataResult[0].data.message.split(" ")[1])
+      fnCallBack(null, resultArray)
     }
   )
 

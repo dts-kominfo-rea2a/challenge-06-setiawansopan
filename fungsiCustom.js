@@ -1,5 +1,6 @@
 // TODO: import module bila dibutuhkan di sini
-const fs = require('fs')
+const fs = require('fs');
+
 // ! JANGAN DIMODIFIKASI
 let file1 = "./data1.json";
 let file2 = "./data2.json";
@@ -34,8 +35,8 @@ const bacaData = (fnCallBack) => {
       resultArray.push(dataResult.message.split(" ")[1])
     }
   )
-
-  fs.readFile(
+  
+ fs.readFile(
     file2,
     {
       encoding: "utf8"
